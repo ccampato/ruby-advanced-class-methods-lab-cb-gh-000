@@ -45,6 +45,10 @@ class Song
     name = data[1].split(".").first
     artist = data[0]
 
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
   end
 
 end
