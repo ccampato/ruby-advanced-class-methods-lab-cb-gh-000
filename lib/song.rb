@@ -1,5 +1,3 @@
-require "pry"
-
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -43,20 +41,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    data = file.split(" - ")
-    data.collect do |data|
-      @song_name = data[1].split(".").first
-      @song_artist =  data[0]
-
-      song = self.new
-      song.name = @song_name
-      song.artist_name = @song_artist
-      @song
-    end
-    @song
+    
   end
-
-
-
 
 end
