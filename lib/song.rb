@@ -46,7 +46,7 @@ class Song
     data = file.split(" - ")
     binding.pry
     data.collect do |data|
-      @song_name = data[1].split(".").pop[1]
+      @song_name = data[1].split(".").first
       @song_artist =  data[0]
     end
 
