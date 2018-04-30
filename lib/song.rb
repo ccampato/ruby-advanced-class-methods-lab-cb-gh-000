@@ -45,8 +45,8 @@ class Song
   def self.new_from_filename(file)
     data = file.split(" - ")
     data.collect do |data|
-      @song_name = data[1].split(".").first
-      @song_artist =  data[0]
+      song_name = data[1].split(".").first
+      song_artist =  data[0]
     end
 
   end
