@@ -49,10 +49,6 @@ class Song
       @song_artist =  data[0]
     end
 
-    song = self.new
-    song.name = @song_name
-    song.artist_name = @song_artist
-    song
   end
 
 
