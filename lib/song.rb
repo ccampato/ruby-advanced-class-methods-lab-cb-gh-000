@@ -42,7 +42,7 @@ class Song
 
   def self.new_from_filename(file)
     data = file.split(" - ")
-    name = data[1].split(".").first
+    nam = data[1].split(".").first
     artist = data[0]
 
   end
